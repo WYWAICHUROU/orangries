@@ -14,6 +14,7 @@
 		70DA086D20E634A300AFA8FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DA086B20E634A300AFA8FC /* LaunchScreen.storyboard */; };
 		70DA087820E634A300AFA8FC /* showViewAgainOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DA087720E634A300AFA8FC /* showViewAgainOneTests.swift */; };
 		70DA088320E634A300AFA8FC /* showViewAgainOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DA088220E634A300AFA8FC /* showViewAgainOneUITests.swift */; };
+		70DA089320E634CA00AFA8FC /* twoUIviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DA089220E634CA00AFA8FC /* twoUIviewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		70DA087E20E634A300AFA8FC /* showViewAgainOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = showViewAgainOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DA088220E634A300AFA8FC /* showViewAgainOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showViewAgainOneUITests.swift; sourceTree = "<group>"; };
 		70DA088420E634A300AFA8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70DA089020E634C900AFA8FC /* showViewAgainOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "showViewAgainOne-Bridging-Header.h"; sourceTree = "<group>"; };
+		70DA089120E634CA00AFA8FC /* twoUIviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twoUIviewViewController.h; sourceTree = "<group>"; };
+		70DA089220E634CA00AFA8FC /* twoUIviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twoUIviewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +81,13 @@
 		70DA085620E634A300AFA8FC = {
 			isa = PBXGroup;
 			children = (
+				70DA089120E634CA00AFA8FC /* twoUIviewViewController.h */,
+				70DA089220E634CA00AFA8FC /* twoUIviewViewController.m */,
 				70DA086120E634A300AFA8FC /* showViewAgainOne */,
 				70DA087620E634A300AFA8FC /* showViewAgainOneTests */,
 				70DA088120E634A300AFA8FC /* showViewAgainOneUITests */,
 				70DA086020E634A300AFA8FC /* Products */,
+				70DA089020E634C900AFA8FC /* showViewAgainOne-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +200,7 @@
 				TargetAttributes = {
 					70DA085E20E634A300AFA8FC = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					70DA087220E634A300AFA8FC = {
@@ -261,6 +269,7 @@
 			files = (
 				70DA086520E634A300AFA8FC /* ViewController.swift in Sources */,
 				70DA086320E634A300AFA8FC /* AppDelegate.swift in Sources */,
+				70DA089320E634CA00AFA8FC /* twoUIviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +356,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -404,6 +414,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -426,12 +437,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9V4WE47UM;
 				INFOPLIST_FILE = showViewAgainOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wrench.cn.showViewAgainOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "showViewAgainOne-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,12 +455,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9V4WE47UM;
 				INFOPLIST_FILE = showViewAgainOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wrench.cn.showViewAgainOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "showViewAgainOne-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

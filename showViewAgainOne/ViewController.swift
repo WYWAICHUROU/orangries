@@ -12,6 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let one = twoUIviewViewController()
+        
+        self.view.backgroundColor = UIColor.red
+        
+        self .present(one, animated: false, completion: nil)//设置去进行数据
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -22,4 +29,5 @@ class ViewController: UIViewController {
 
 
 }
+
 
